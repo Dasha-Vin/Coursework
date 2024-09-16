@@ -1,0 +1,28 @@
+.registration-title {
+    font-size: 22px;
+    line-height: 25px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.registration-block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100px;
+}
+
+.btn-registration {
+    border: none;
+    background-color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: orangered;
+    text-decoration: none;
+}
+
+.btn-registration:hover {
+    opacity: 0.5;
+}

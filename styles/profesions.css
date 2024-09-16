@@ -1,0 +1,28 @@
+.profesion {
+    width: 100%;
+}
+
+.profesion-title {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.profesion-image {
+    color: black;
+}
+
+.profesion-text {
+    font-size: 32px;
+    line-height: 61px;
+    margin-bottom: 30px;
+}
+
+.btn-profesion {
+    background-color: orangered;
+    color: white;
+    font-size: 40px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Web-сайт</title>
+</head>
+<body>
+    <!--     <a class="nav_link" href="#about-us">О НАС</a>
+            <a class="nav_link" href="#gallery">ГАЛЕРЕЯ</a>
+            <a class="nav_link" href="#registration">РЕГИСТРАЦИЯ</a>
+            <a class="nav_link" href="#contacts">КОНТАКТЫ</a>
+            <a class="nav_link" href="">Личный кабинет</a>
+        </nav>
+    </header>-->
+    <main>
+        <div class="container-orange">
+            <section class="section-nopadd">
+                <div class="interior">
+                    <div class="container">
+                        <div class="interior-block">
+                            <h1>Уральская сталь</h1>    
+                            <img class="interior-image" src="resources/logo.png" alt="">       
+                        </div>    
+                    </div>
+                </div>
+            </section>    
+        </div>
+
+        <section class="about-us section-long">
+            <h2 id="about-us" class="about-us-title">
+                О НАС
+            </h2>
+            <p class="about-us-text">
+                На сайте Уральской Стали вы можете узнать о 
+                нашей программе профессионального обучения, 
+                которая позволяет сотрудникам получить новые 
+                профессии за счёт предприятия. Эта программа 
+                помогла десяткам жителей Новотроицка и Орска 
+                освоить новые специальности. Новотроицкий 
+                политехнический колледж и Орский машиностроительный 
+                колледж готовят специалистов для Уральской 
+                Стали по различным направлениям, таким как 
+                слесарь-ремонтник, электромонтёр, горновой 
+                доменной печи и другие. 
+            </p>
+        </section>
+
+        <section id="gallery" class="section-gallery section-nopadd section-long">
+            <div class="gallery">
+                <div class="container">
+                    <div class="gallery-title-wrapper">
+                        <div class="container-gallery">
+                            <p class="gallery-title">ГАЛЕРЕЯ</p>
+                        </div>
+                    </div>    
+                </div>
+                
+                <div class="gallery__slides">
+                    <div class="gallery__slide gallery__slide_active">
+                        <div class="gallery_box gallery_image_title">
+                        </div>
+                    </div>
+                    <div class="gallery__slide">
+                        <div class="gallery_box gallery_image_second">
+                        </div>
+                    </div>
+                    <div class="gallery__slide">
+                        <div class="gallery_box gallery_image_third">
+                        </div>
+                    </div>
+                    <div class="gallery__slide">
+                        <div class="gallery_box gallery_image_fourth">
+                        </div>
+                    </div>
+                    <div class="gallery__slide">
+                        <div class="gallery_box gallery_image_five">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="gallery_controls-wrapper">
+                        <div class="container-controls">
+                            <div class="gallery__controls">
+                                <button class="gallery__control-prev"></button>
+                                <button class="gallery__control-next"></button>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+        <section id="registration" class="registration section-long">
+            <h2 class="registration-title">Регистрация на переподготовку сотрудников</h2>
+            <div class="registration-block">
+                <a href="profesion1.html" class="js-btn-registration btn-registration">профессия1</a>
+                <a class="js-btn-registration2 btn-registration">профессия2</a>
+                <a class="js-btn-registration3 btn-registration">профессия3</a>
+                <a class="js-btn-registration4 btn-registration">профессия4</a>
+                <a class="js-btn-registration5 btn-registration">профессия5</a>
+            </div>
+        </section>
+
+        <section class="section-long">
+            <h2 id="contacts" class="Phone-before">КОНТАКТЫ</h2>
+            <div class="contacts__block">
+                <a class="contacts-phone" href="tel:+7 935  895-45-35">+7 935  895-45-35</a>  
+                <a class="contacts-mail" href="mailto:hello@mail.com">hello@mail.com</a>      
+            </div>
+        </section>
+    </main>
+    
+    <script src="javaScript/gallery.js"></script>
+    <script src="javaScript/profesion.js"></script>
+</body>
+</html>

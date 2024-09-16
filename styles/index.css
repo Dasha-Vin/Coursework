@@ -1,0 +1,71 @@
+@import "../styles/gallery.css";
+@import "../styles/interior.css";
+@import "../styles/about-us.css";
+@import "../styles/registration.css";
+@import "../styles/contacts.css";
+@import "../styles/header.css";
+@import "../styles/profesions.css";
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: white;
+    width: 100%;
+}
+
+main {
+    background-color: white;
+}
+
+.container-orange {
+    background-color: orangered;
+    margin-bottom: 100px;
+}
+
+section, 
+.container {
+    margin: 0 auto;
+}
+
+.container {
+    width: 1150px;
+}
+
+section {
+    width: 1150px;
+}
+
+.section-nopadd {
+    padding: 0;
+}
+
+.section-gallery {
+    width: 100%;
+}
+
+.section-long {
+    padding-bottom: 100px;
+}
+
+
+@media (max-width: 1199px) {
+    section,
+    .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 17px;
+    }
+}
+@media (max-width: 767px) {
+    section,
+    .container {
+        padding-right: 12px;
+        padding-left: 13px;
+    }
+    .container-orange {
+        margin-bottom: 50px;
+    }
+    .section-long {
+        padding-bottom: 50px;
+    }
+}
+

@@ -1,0 +1,59 @@
+.interior {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    padding-top: 25px;
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 50px;
+    color: white;
+    text-align: left;
+    padding-top: 30px;
+    width: 100%;
+}  
+
+.interior-image {
+    position: absolute;
+    border: none;
+    top: 25px;
+    right: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+@media (max-width: 850px) {
+    .interior {
+        height: 150px;
+    }
+    h1 {
+        font-size: 55px;
+        line-height: 40px;
+        width: 100%;
+        padding-top: 25px;
+        width: 500px;
+    }
+    .interior-image {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 540px) {
+    .interior {
+        height: 130px;
+    }
+    h1 {
+        font-size: 46px;
+        line-height: 35px;
+        width: 300px;
+        padding-top: 10px;
+    }
+    .interior-image {
+        width: 80px;
+        height: 80px;
+    }
+}
+  
+
