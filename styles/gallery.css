@@ -150,4 +150,7 @@
         justify-content: space-between;
         gap: 0;
     }
+    .gallery__control-next {
+        margin-right: 15px;
+    } 
 }
