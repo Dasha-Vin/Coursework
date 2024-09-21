@@ -10,8 +10,8 @@ h1 {
     line-height: 50px;
     color: white;
     text-align: left;
-    padding-top: 30px;
     width: 100%;
+    letter-spacing: -0.03cm;
 }  
 
 .interior-image {
@@ -23,15 +23,21 @@ h1 {
     height: 150px;
 }
 
+.interior-block {
+    padding-top: 40px;
+}
+
 @media (max-width: 850px) {
     .interior {
         height: 150px;
+    }
+    .interior-block {
+        padding-top: 25px;
     }
     h1 {
         font-size: 55px;
         line-height: 40px;
         width: 100%;
-        padding-top: 25px;
         width: 500px;
     }
     .interior-image {
@@ -46,9 +52,11 @@ h1 {
     }
     h1 {
         font-size: 46px;
-        line-height: 35px;
+        line-height: 40px;
         width: 300px;
-        padding-top: 10px;
+    }
+    .interior-block {
+        padding-top: 5px;
     }
     .interior-image {
         width: 80px;

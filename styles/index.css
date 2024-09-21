@@ -5,6 +5,11 @@
 @import "../styles/contacts.css";
 @import "../styles/header.css";
 @import "../styles/profesions.css";
+@import "../styles/burger.css";
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: "Inter", sans-serif;
@@ -40,6 +45,7 @@ section {
 
 .section-gallery {
     width: 100%;
+    padding-top: 50px;
 }
 
 .section-long {

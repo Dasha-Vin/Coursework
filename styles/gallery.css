@@ -4,15 +4,23 @@
 
 .gallery-title-wrapper {
     position: absolute;
-    width: 205px;
-    top: 60px;
+    top: 60%;
+    left: 20px;
     z-index: 100;
+    width: 70%;
 }
 .gallery-title {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 35px;
+    line-height: 38px;
     color: #FFF;
-    width: 201px;
+    margin-bottom: 10px;
+}
+
+.gallery-text {
+    color: #FFF;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.03cm;
 }
 
 .gallery__slides {
@@ -38,6 +46,7 @@
     height: 600px;
     background-position: 50%;
     background-size: cover;
+    border-radius: 20px;
 }
 
 .gallery_image_title {
@@ -59,12 +68,14 @@
 
 .gallery_controls-wrapper {
     position: absolute;
-    width: 100px;
-    bottom: 70px;
+    width: 100%;
+    left: 0;
+    bottom: 50%;
 }
 .gallery__controls {
     display: flex;
-    gap: 14px;
+    justify-content: space-between;
+    gap: 0;
 }
 
 .gallery__control-prev {
@@ -97,13 +108,10 @@
     .section-gallery {
         width: 100%;
     }
-    .gallery-title {
-        width: 183px;
-    }
     .gallery-title-wrapper {
-        width: 183px;
-        left: 50px;
-        top: 80px;
+        width: 95%;
+        right: 20px;
+        top: 55%;
     }
     .gallery__slides {
         height: 536px;
@@ -113,10 +121,6 @@
         background-position: 50%;
         height: 100%;
     }
-    .gallery_controls-wrapper {
-        left: 41px;
-        bottom: 152px;
-    }
 }
 
 @media (max-width: 650px) {
@@ -124,14 +128,18 @@
         width: 100%;
     }
     .gallery-title {
-        width: 128px;
-        font-size: 18px;
-        line-height: 25px;
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 5px;
+    }
+    .gallery-text {
+        font-size: 10px;
+        line-height: 20px;
     }
     .gallery-title-wrapper {
-        width: 130px;
         left: 12px;
-        top: 61px;
+        right: 12px;
+        top: 50%;
     }
     .gallery__slides {
         height: 408px;
@@ -141,16 +149,4 @@
         background-position: 45%;
         height: 100%;
     }
-    .gallery_controls-wrapper {
-        width: 100%;
-        left: 7px;
-        bottom: 50%;
-    }
-    .gallery__controls {
-        justify-content: space-between;
-        gap: 0;
-    }
-    .gallery__control-next {
-        margin-right: 13px;
-    } 
 }

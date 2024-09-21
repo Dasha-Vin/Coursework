@@ -11,55 +11,56 @@
     <title>Web-сайт</title>
 </head>
 <body>
-    <!--     <a class="nav_link" href="#about-us">О НАС</a>
-            <a class="nav_link" href="#gallery">ГАЛЕРЕЯ</a>
-            <a class="nav_link" href="#registration">РЕГИСТРАЦИЯ</a>
-            <a class="nav_link" href="#contacts">КОНТАКТЫ</a>
-            <a class="nav_link" href="">Личный кабинет</a>
-        </nav>
-    </header>-->
-    <main>
-        <div class="container-orange">
-            <section class="section-nopadd">
-                <div class="interior">
-                    <div class="container">
-                        <div class="interior-block">
-                            <h1>Уральская сталь</h1>    
-                            <img class="interior-image" src="resources/logo.png" alt="">       
-                        </div>    
-                    </div>
-                </div>
-            </section>    
+    <header class="header">
+        <div class="header__inner container">
+            <div class="header__logo">
+                <img class="header-image" src="resources/logo.png" alt="">
+                <h3 class="header-title">Уральская сталь</h3>
+            </div>
+            <nav class="header-nav">
+                <ul class="header-nav__menu">
+                    <li class="header-nav__item">
+                        <a class="header-nav__link active" href="#about">О нас</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#projects">Проекты</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#services">Услуги</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__burger js-burger-btn burger">
+                <span class="burger__line burger__line--long"></span>
+                <span class="burger__line burger__line--short"></span>
+            </button>
         </div>
+      </header>
 
-        <section class="about-us section-long">
-            <h2 id="about-us" class="about-us-title">
-                О НАС
-            </h2>
-            <p class="about-us-text">
-                На сайте Уральской Стали вы можете узнать о 
-                нашей программе профессионального обучения, 
-                которая позволяет сотрудникам получить новые 
-                профессии за счёт предприятия. Эта программа 
-                помогла десяткам жителей Новотроицка и Орска 
-                освоить новые специальности. Новотроицкий 
-                политехнический колледж и Орский машиностроительный 
-                колледж готовят специалистов для Уральской 
-                Стали по различным направлениям, таким как 
-                слесарь-ремонтник, электромонтёр, горновой 
-                доменной печи и другие. 
-            </p>
-        </section>
-
+    <main>
         <section id="gallery" class="section-gallery section-nopadd section-long">
             <div class="gallery">
-                <div class="container">
-                    <div class="gallery-title-wrapper">
-                        <div class="container-gallery">
-                            <p class="gallery-title">ГАЛЕРЕЯ</p>
-                        </div>
-                    </div>    
-                </div>
+                <div class="gallery-title-wrapper">
+                    <div class="container-gallery">
+                        <h2 class="gallery-title">
+                            Уральская сталь
+                        </h2>
+                        <p class="gallery-text">
+                            Уральская сталь — это металлургический комбинат в 
+                            городе Новотроицк Оренбургской области. Это один 
+                            из ведущих производителей чёрной металлургии в России. 
+                            Уральская сталь имеет богатую историю и множество достижений. 
+                            Комбинат активно внедряет современные технологии и 
+                            инновации, что позволяет ему оставаться конкурентоспособным 
+                            на мировом рынке. Уральская сталь экспортирует свою продукцию 
+                            в различные страны мира, обеспечивая рабочие места и 
+                            развитие экономики региона.
+                        </p>
+                    </div>
+                </div>    
                 
                 <div class="gallery__slides">
                     <div class="gallery__slide gallery__slide_active">
@@ -83,6 +84,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="container">
                     <div class="gallery_controls-wrapper">
                         <div class="container-controls">
@@ -96,15 +98,23 @@
             </div>
         </section>
 
-        <section id="registration" class="registration section-long">
-            <h2 class="registration-title">Регистрация на переподготовку сотрудников</h2>
-            <div class="registration-block">
-                <a href="profesion1.html" class="js-btn-registration btn-registration">профессия1</a>
-                <a class="js-btn-registration2 btn-registration">профессия2</a>
-                <a class="js-btn-registration3 btn-registration">профессия3</a>
-                <a class="js-btn-registration4 btn-registration">профессия4</a>
-                <a class="js-btn-registration5 btn-registration">профессия5</a>
-            </div>
+        <section class="about-us section-long">
+            <h2 id="about-us" class="about-us-title">
+                О ПРОГРАММЕ ПЕРЕПОДГОТОВКИ СОТРУДНИКОВ
+            </h2>
+            <p class="about-us-text">
+                На сайте Уральской Стали вы можете узнать о 
+                нашей программе профессионального обучения, 
+                которая позволяет сотрудникам получить новые 
+                профессии за счёт предприятия. Эта программа 
+                помогла десяткам жителей Новотроицка и Орска 
+                освоить новые специальности. Новотроицкий 
+                политехнический колледж и Орский машиностроительный 
+                колледж готовят специалистов для Уральской 
+                Стали по различным направлениям, таким как 
+                слесарь-ремонтник, электромонтёр, горновой 
+                доменной печи и другие. 
+            </p>
         </section>
 
         <section class="section-long">
@@ -118,5 +128,6 @@
     
     <script src="javaScript/gallery.js"></script>
     <script src="javaScript/profesion.js"></script>
+    <script src="javaScript/burger.js"></script>
 </body>
 </html>
