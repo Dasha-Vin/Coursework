@@ -1,12 +1,12 @@
 .burger {
     display: none;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: end;
 }
   
 .burger-mobile-menu {
     display: flex;
-    justify-content: flex-end;
+    justify-content: right;
     position: fixed;
     left: 0;
     top: 0;
@@ -87,6 +87,8 @@
     top: 20px;
     width: 34px;
     height: 34px;
+    border: none;
+    background-color: white;
 }
   
 .burger_open {

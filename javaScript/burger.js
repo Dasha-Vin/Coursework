@@ -1,24 +1,42 @@
-const BURGER_OPENED_CLASSNAME = 'burger-open';
-const BURGER_BTN_OPENED_CLASSNAME = 'burger-btn_open';
 const BODY_FIXED_CLASSNAME = 'body_fixed';
+const BURGER_OPENED_CLASSNAME = 'burger_open';
 
 const bodyNode = document.querySelector('body');
-const burgerNode = document.querySelector('.js-burger');
+const burgerNode = document.querySelector('.js-burger-mobile-menu');
 const burgerBtnNode = document.querySelector('.js-burger-btn');
-const burgerContentNode = document.querySelector('.js-burger-content')
+const burgerContentNode = document.querySelector('.js-burger__content');
+const burgerCloseBtn = document.querySelector('.js-burger__close-btn');
+const burgerMobileLinks = document.querySelectorAll('.js-burger-mobile-menu-nav-menu__link');
+
+// Burger
 
 burgerBtnNode.addEventListener('click', toggleBurger);
 
-burgerNode.addEventListener('click', (event) => {
-    const isClickOutsideContent = !event.composedPath().includes(burgerContentNode)
+burgerNode.addEventListener('click', event => {
+  const isClickOutsideContent = !event
+    .composedPath()
+    .includes(burgerContentNode);
 
-    if (isClickOutsideContent) {
-        toggleBurger();
-    }
-})
+  if (isClickOutsideContent) {
+    toggleBurger();
+  }
+});
+
+burgerCloseBtn.addEventListener('click', closeBurgerMenu);
 
 function toggleBurger() {
-    burgerNode.classList.toggle(BURGER_OPENED_CLASSNAME);
-    bodyNode.classList.toggle(BODY_FIXED_CLASSNAME);
-    burgerBtnNode.classList.toggle(BURGER_BTN_OPENED_CLASSNAME);
+  burgerNode.classList.toggle(BURGER_OPENED_CLASSNAME);
+  bodyNode.classList.toggle(BODY_FIXED_CLASSNAME);
+  // burgerBtnNode.classList.toggle(BURGER_BTN_OPENED_CLASSNAME);
 }
+
+function closeBurgerMenu() {
+  burgerNode.classList.remove(BURGER_OPENED_CLASSNAME);
+  bodyNode.classList.remove(BODY_FIXED_CLASSNAME);
+}
+
+burgerMobileLinks.forEach(link => {
+  link.addEventListener('click', function () {
+    closeBurgerMenu();
+  });
+});
