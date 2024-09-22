@@ -128,18 +128,18 @@
         width: 100%;
     }
     .gallery-title {
-        font-size: 15px;
+        font-size: 18px;
         line-height: 22px;
-        margin-bottom: 5px;
+        margin-bottom: 3px;
     }
     .gallery-text {
-        font-size: 10px;
+        font-size: 15px;
         line-height: 20px;
     }
     .gallery-title-wrapper {
         left: 12px;
         right: 12px;
-        top: 50%;
+        top: 53%;
     }
     .gallery__slides {
         height: 408px;
