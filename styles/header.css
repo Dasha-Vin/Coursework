@@ -1,95 +1,80 @@
 .header__logo {
-    width: 150px;
-    height: 30px;
+    width: 170px;
+    height: 50px;
 }
   
-.header {
-    position: fixed;
-    z-index: 10000;
-    width: 100%;
-    left: 0;
-    top: 0;
-    background-color: #fff;
-    box-shadow: 1px 1px 5px #2b2b2b;
-    padding-top: 31px;
-    padding-bottom: 31px;
-    margin-bottom: 40px;
+header {
+    padding-top: 33px;
+    width: 1150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 33px;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
 }
 
 .header-title {
     font-size: 22px;
 }
 
-.header-image {
+.logo {
     float: left;
     width: 40px;
     height: 40px;
 }
-  
-.header-nav__menu {
-    display: flex;
-}
-  
-.header__inner {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-  
+
 .header__burger {
     position: absolute;
     right: 20px;
     top: 8px;
 }
   
-.header-nav__link {
+.nav-link {
     position: relative;
     font-size: 18px;
     line-height: 24.59px;
-    font-family: 'Manrope', sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     color: #121212;
     opacity: 1;
     transition: opacity 0.3s ease-in;
+    margin-left: 50px;
 }
   
-.header-nav__link.active::before {
+.nav-link::before {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -5px;
-    height: 1px;
-    width: 100%;
-    background-color: #000000;
-}
-  
-.header-nav__link::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
     height: 1px;
     background-color: #000000;
     width: 0;
     transition: width 0.3s ease-in;
 }
   
-.header-nav__link:hover::before {
+.nav-link:hover::before {
     width: 100%;
 }
   
-.header-nav__link:hover {
+.nav-link:hover {
     opacity: 0.5;
 }
   
-.header-nav__item + .header-nav__item{
-    margin-left: 53px;
-}
-  
-@media (max-width: 991px) {
-    .header-nav {
-      display: none;
+@media (max-width: 1199px) {
+    header {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 17px;
+    }
+    .nav {
+        display: none;
     }
 }

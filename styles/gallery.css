@@ -18,7 +18,7 @@
 
 .gallery-text {
     color: #FFF;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 30px;
     letter-spacing: -0.03cm;
 }
@@ -137,9 +137,9 @@
         line-height: 20px;
     }
     .gallery-title-wrapper {
-        left: 12px;
-        right: 12px;
-        top: 53%;
+        left: 15px;
+        right: 15px;
+        top: 15%;
     }
     .gallery__slides {
         height: 408px;
